@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-    <widget
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/9.0"
         id          = "colouring.splodge23.edu.mit.scratch"
-        versionCode = "11" 
-        version     = "1.0.1" >
-<preference name="KeepRunning" value="true" />
-<preference name="DisallowOverscroll" value="true"/>
-<preference name="Fullscreen" value="true" />
-<preference name="SplashScreenDelay" value="10000" />
-<preference name="loglevel" value="DEBUG" />
-<preference name="AndroidPersistentFileLocation" value="Compatibility" />
-<preference name="orientation" value="default"/>
-<preference name="android-targetSdkVersion" value="28" />
+        versionCode = "10" 
+        version     = "1.0.0" >
     <name>Colouring</name>
     <description>
 Colour in your favourite pictures
