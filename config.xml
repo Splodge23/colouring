@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
-        xmlns:gap   = "http://phonegap.com/ns/9.0"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "colouring.splodge23.edu.mit.scratch"
         versionCode = "10" 
         version     = "1.0.0" >
+     <preference name="phonegap-version" value="cli-9.0.0" />
     <name>Colouring</name>
     <description>
 Colour in your favourite pictures
