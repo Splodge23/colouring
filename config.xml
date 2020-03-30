@@ -10,7 +10,7 @@
 <preference name="loglevel" value="DEBUG" />
 <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 <preference name="orientation" value="default"/>
-<preference name="android-targetSdkVersion" value="26" />
+<preference name="android-targetSdkVersion" value="28" />
     <name>Colouring</name>
     <description>
 Colour in your favourite pictures
