@@ -3,9 +3,23 @@
         <title> Colouring </title>
     </head>
     <body>
-        <canvas id=myCanvas width=440 height=560 style="background-color: white;"> </canvas>
+        <table>
+            <tr>
+            <td><canvas id=myCanvas width=440 height=560 style="background-color: white"> </canvas></td>
+            <td><ul style="list-style-type:none">
+                <li><img id="fox" src="fox.jpg" onclick="Fox()"></li>
+                <li><img id="boat" src="boat.jpg" onclick="Boat()"></li>
+                <li><img id="flower" src="flower.jpg" onclick="Flower()"></li>
+                </ul></td>
+            </tr></table>
         <script>
         var ctx = myCanvas.getContext("2d");
+        var drawn = 1;
+        function Start(){
+        switch (drawn) { //code in yellow
+            case 1:
+        //code for Fox
+                ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
         function Square(col,y){
             ctx.fillStyle = col;
             ctx.fillRect(0,y,40,40)}
@@ -175,7 +189,240 @@
         ctx.fillRect(130,530,50,10);
         ctx.fillRect(260,530,50,10);
         ctx.fillRect(320,530,40,10);            //draw fox
+        break;
+            case 2:
+        //code for Boat
+                ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
+        function Square(col,y){
+            ctx.fillStyle = col;
+            ctx.fillRect(0,y,40,40)}
+        Square("black",0);
+        Square("DimGrey",40);
+        Square("FireBrick",80);
+        Square("Red",120);
+        Square("Orange",160);
+        Square("Yellow",200);
+        Square("ForestGreen",240);
+        Square("LawnGreen",280);
+        Square("MidnightBlue",320);
+        Square("SteelBlue",360);
+        Square("Turquoise",400);
+        Square("LemonChiffon",440);
+        Square("WhiteSmoke",480);           //buttons down the side
+        ctx.fillStyle="Black";
+        ctx.fillRect(220,10,40,10);
+        ctx.fillRect(220,20,10,380);
+        ctx.fillRect(240,20,10,380);
+        ctx.fillRect(260,20,10,10);
+        ctx.fillRect(270,30,10,10);
+        ctx.fillRect(210,40,10,20);
+        ctx.fillRect(260,40,10,10);
+        ctx.fillRect(250,50,10,20);
+        ctx.fillRect(200,60,10,20);
+        ctx.fillRect(260,70,10,20);
+        ctx.fillRect(190,80,10,10);
+        ctx.fillRect(190,90,30,10);
+        ctx.fillRect(270,90,10,20);
+        ctx.fillRect(180,100,10,20);
+        ctx.fillRect(280,110,10,20);
+        ctx.fillRect(170,120,50,10);
+        ctx.fillRect(170,130,10,10);
+        ctx.fillRect(290,130,10,20);
+        ctx.fillRect(160,140,10,10);
+        ctx.fillRect(160,150,60,10);
+        ctx.fillRect(300,150,10,20);
+        ctx.fillRect(150,160,10,20);
+        ctx.fillRect(310,170,10,20);
+        ctx.fillRect(140,180,80,10);
+        ctx.fillRect(140,190,10,10);
+        ctx.fillRect(320,190,10,20);
+        ctx.fillRect(130,200,10,10);
+        ctx.fillRect(130,210,90,10);
+        ctx.fillRect(330,210,10,20);
+        ctx.fillRect(120,220,10,20);
+        ctx.fillRect(340,230,10,20);
+        ctx.fillRect(110,240,110,10);
+        ctx.fillRect(110,250,10,10);
+        ctx.fillRect(350,250,10,20);
+        ctx.fillRect(100,260,10,10);
+        ctx.fillRect(100,270,120,10);
+        ctx.fillRect(360,270,10,20);
+        ctx.fillRect(90,280,10,20);
+        ctx.fillRect(370,290,10,20);
+        ctx.fillRect(80,300,140,10);
+        ctx.fillRect(80,310,10,10);
+        ctx.fillRect(380,310,10,20);
+        ctx.fillRect(70,320,10,10);
+        ctx.fillRect(70,330,150,10);
+        ctx.fillRect(390,330,10,20);
+        ctx.fillRect(400,350,10,10);
+        ctx.fillRect(250,360,160,10);
+        ctx.fillRect(50,400,380,10);
+        ctx.fillRect(50,410,10,20);
+        ctx.fillRect(420,410,10,20);
+        ctx.fillRect(60,430,10,20);
+        ctx.fillRect(130,430,30,10);
+        ctx.fillRect(220,430,30,10);
+        ctx.fillRect(310,430,30,10);
+        ctx.fillRect(410,430,10,20);
+        ctx.fillRect(120,440,10,10);
+        ctx.fillRect(160,440,10,10);
+        ctx.fillRect(210,440,10,10);
+        ctx.fillRect(250,440,10,10);
+        ctx.fillRect(300,440,10,10);
+        ctx.fillRect(340,440,10,10);
+        ctx.fillRect(70,450,10,20);
+        ctx.fillRect(110,450,10,30);
+        ctx.fillRect(170,450,10,30);
+        ctx.fillRect(200,450,10,30);
+        ctx.fillRect(260,450,10,30);
+        ctx.fillRect(290,450,10,30);
+        ctx.fillRect(350,450,10,30);
+        ctx.fillRect(400,450,10,20);
+        ctx.fillRect(80,470,10,20);
+        ctx.fillRect(390,470,10,20);
+        ctx.fillRect(120,480,10,10);
+        ctx.fillRect(160,480,10,10);
+        ctx.fillRect(210,480,10,10);
+        ctx.fillRect(250,480,10,10);
+        ctx.fillRect(300,480,10,10);
+        ctx.fillRect(340,480,10,10);
+        ctx.fillRect(90,490,10,20);
+        ctx.fillRect(130,490,30,10);
+        ctx.fillRect(220,490,30,10);
+        ctx.fillRect(310,490,30,10);
+        ctx.fillRect(380,490,10,20);
+        ctx.fillRect(100,510,10,20);
+        ctx.fillRect(370,510,10,20);
+        ctx.fillRect(110,530,260,10);                    //draw boat
+        break;
+            case 3:
+        //code for Flower
+                ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
+        function Square(col,y){
+            ctx.fillStyle = col;
+            ctx.fillRect(0,y,40,40)}
+        Square("Red",0);
+        Square("Orange",40);
+        Square("Yellow",80);
+        Square("Crimson",120);
+        Square("PaleVioletRed",160);
+        Square("Orchid",200);
+        Square("RebeccaPurple",240);
+        Square("MidnightBlue",280);
+        Square("ForestGreen",320);
+        Square("SeaGreen",360);
+        Square("Thistle",400);
+        Square("LemonChiffon",440);
+        Square("WhiteSmoke",480);           //buttons down the side
+        ctx.fillStyle="Black";
+        ctx.fillRect(170,60,20,10);
+        ctx.fillRect(210,60,50,10);
+        ctx.fillRect(280,60,20,10);
+        ctx.fillRect(160,70,10,10);
+        ctx.fillRect(190,70,20,10);
+        ctx.fillRect(260,70,20,10);
+        ctx.fillRect(300,70,10,10);
+        ctx.fillRect(150,80,10,10);
+        ctx.fillRect(200,80,10,50);
+        ctx.fillRect(260,80,10,50);
+        ctx.fillRect(310,80,10,10);
+        ctx.fillRect(140,90,10,10);
+        ctx.fillRect(160,90,10,10);
+        ctx.fillRect(300,90,10,10);
+        ctx.fillRect(320,90,10,10);
+        ctx.fillRect(130,100,10,10);
+        ctx.fillRect(170,100,10,10);
+        ctx.fillRect(290,100,10,10);
+        ctx.fillRect(330,100,10,10);
+        ctx.fillRect(120,110,10,10);
+        ctx.fillRect(180,110,10,10);
+        ctx.fillRect(280,110,10,10);
+        ctx.fillRect(340,110,10,10);
+        ctx.fillRect(110,120,10,20);
+        ctx.fillRect(190,120,10,10);
+        ctx.fillRect(270,120,10,10);
+        ctx.fillRect(350,120,10,20);
+        ctx.fillRect(200,130,70,10);
+        ctx.fillRect(120,140,10,10);
+        ctx.fillRect(190,140,10,70);
+        ctx.fillRect(270,140,10,70);
+        ctx.fillRect(340,140,10,10);
+        ctx.fillRect(110,150,10,10);
+        ctx.fillRect(130,150,10,10);
+        ctx.fillRect(330,150,10,10);
+        ctx.fillRect(350,150,10,10);
+        ctx.fillRect(100,160,10,30);
+        ctx.fillRect(140,160,10,10);
+        ctx.fillRect(320,160,10,10);
+        ctx.fillRect(360,160,10,30);
+        ctx.fillRect(150,170,40,10);
+        ctx.fillRect(280,170,40,10);
+        ctx.fillRect(140,180,10,10);
+        ctx.fillRect(320,180,10,10);
+        ctx.fillRect(110,190,10,10);
+        ctx.fillRect(130,190,10,10);
+        ctx.fillRect(330,190,10,10);
+        ctx.fillRect(350,190,10,10);
+        ctx.fillRect(120,200,10,10);
+        ctx.fillRect(340,200,10,10);
+        ctx.fillRect(110,210,10,20);
+        ctx.fillRect(200,210,70,10);
+        ctx.fillRect(350,210,10,20);
+        ctx.fillRect(190,220,10,10);
+        ctx.fillRect(200,220,10,60);
+        ctx.fillRect(260,220,10,60);
+        ctx.fillRect(270,220,10,10);
+        ctx.fillRect(120,230,10,10);
+        ctx.fillRect(180,230,10,10);
+        ctx.fillRect(280,230,10,10);
+        ctx.fillRect(340,230,10,10);
+        ctx.fillRect(130,240,10,10);
+        ctx.fillRect(170,240,10,10);
+        ctx.fillRect(290,240,10,10);
+        ctx.fillRect(330,240,10,10);
+        ctx.fillRect(140,250,10,10);
+        ctx.fillRect(160,250,10,10);
+        ctx.fillRect(300,250,10,10);
+        ctx.fillRect(320,250,10,10);
+        ctx.fillRect(150,260,10,10);
+        ctx.fillRect(310,260,10,10);
+        ctx.fillRect(160,270,10,10);
+        ctx.fillRect(190,270,10,10);
+        ctx.fillRect(270,270,10,10);
+        ctx.fillRect(300,270,10,10);
+        ctx.fillRect(170,280,20,10);
+        ctx.fillRect(210,280,50,10);
+        ctx.fillRect(280,280,20,10);
+        ctx.fillRect(220,290,10,240);
+        ctx.fillRect(240,290,10,240);
+        ctx.fillRect(300,330,60,10);
+        ctx.fillRect(290,340,10,10);
+        ctx.fillRect(350,340,10,50);
+        ctx.fillRect(280,350,10,20);
+        ctx.fillRect(330,350,10,10);
+        ctx.fillRect(320,360,10,10);
+        ctx.fillRect(270,370,10,20);
+        ctx.fillRect(310,370,10,10);
+        ctx.fillRect(300,380,10,10);
+        ctx.fillRect(280,390,10,10);
+        ctx.fillRect(340,390,10,10);
+        ctx.fillRect(270,400,10,10);
+        ctx.fillRect(290,400,10,10);
+        ctx.fillRect(320,400,20,10);
+        ctx.fillRect(260,410,10,10);
+        ctx.fillRect(280,410,10,10);
+        ctx.fillRect(300,410,20,10);
+        ctx.fillRect(250,420,10,10);
+        ctx.fillRect(270,420,10,10);
+        ctx.fillRect(260,430,10,10);
+        ctx.fillRect(250,440,10,10);
+        ctx.fillRect(230,520,10,10)            //draw flower
+        } }
         function a(){
+        switch (drawn) {//code in green
+            case 1:
+        //code for Fox
             ctx.fillRect(70,30,10,120);
             ctx.fillRect(80,40,10,30);
             ctx.fillRect(80,140,10,20);
@@ -183,8 +430,21 @@
             ctx.fillRect(100,60,10,30);
             ctx.fillRect(110,70,10,30);
             ctx.fillRect(120,80,10,30);
-            ctx.fillRect(130,90,10,20) }
+            ctx.fillRect(130,90,10,20) 
+        break;
+            case 2:
+        //code for Boat
+            ctx.fillRect(250,20,10,30);
+            ctx.fillRect(260,30,10,10) 
+        break;
+            case 3:
+        //code for Flower
+            ctx.fillRect(200,140,70,70)
+        } }
         function b(){
+        switch (drawn) {//code in green
+            case 1:
+        //code for Fox
             ctx.fillRect(80,180,10,80);
             ctx.fillRect(90,160,10,120);
             ctx.fillRect(100,150,10,120);
@@ -215,8 +475,33 @@
             ctx.fillRect(310,250,10,20);
             ctx.fillRect(320,150,10,120);
             ctx.fillRect(330,160,10,120);
-            ctx.fillRect(340,180,10,80) }
+            ctx.fillRect(340,180,10,80) 
+        break;
+            case 2:
+        //code for Boat
+            ctx.fillRect(250,70,10,20);
+            ctx.fillRect(250,90,20,20);
+            ctx.fillRect(250,110,30,20);
+            ctx.fillRect(250,130,40,20);
+            ctx.fillRect(250,150,50,20);
+            ctx.fillRect(250,170,60,20);
+            ctx.fillRect(250,190,70,20);
+            ctx.fillRect(250,210,80,20);
+            ctx.fillRect(250,230,90,20);
+            ctx.fillRect(250,250,100,20);
+            ctx.fillRect(250,270,110,20);
+            ctx.fillRect(250,290,120,20);
+            ctx.fillRect(250,310,130,20);
+            ctx.fillRect(250,330,140,20);
+            ctx.fillRect(250,350,150,10) 
+        break;
+            case 3:
+        //code for Flower
+            ctx.fillRect(210,70,50,60)
+        } }
         function c(){
+        switch (drawn) {//code in green
+            case 1:
             ctx.fillRect(80,400,10,40);
             ctx.fillRect(90,380,10,50);
             ctx.fillRect(100,380,10,40);
@@ -239,18 +524,57 @@
             ctx.fillRect(320,380,10,40);
             ctx.fillRect(330,390,10,30);
             ctx.fillRect(340,400,10,30);
-            ctx.fillRect(350,410,10,30) }
+            ctx.fillRect(350,410,10,30) 
+        break;
+            case 2:
+            ctx.fillRect(230,20,10,380) 
+        break;
+            case 3:
+            ctx.fillRect(270,80,10,40);
+            ctx.fillRect(280,70,20,30);
+            ctx.fillRect(280,100,10,10);
+            ctx.fillRect(300,80,10,10)
+        } }
         function d(){
+        switch (drawn) {//code in green
+            case 1:
             ctx.fillRect(80,450,10,80);
             ctx.fillRect(90,440,10,90);
             ctx.fillRect(100,430,20,100);
             ctx.fillRect(120,440,10,70);
-            ctx.fillRect(130,450,10,50) }
+            ctx.fillRect(130,450,10,50) 
+        break;
+            case 2:
+            ctx.fillRect(200,80,10,10);
+            ctx.fillRect(210,60,10,30) 
+        break;
+            case 3:
+            ctx.fillRect(270,130,10,10);
+            ctx.fillRect(280,120,40,50);
+            ctx.fillRect(290,110,50,40);
+            ctx.fillRect(300,100,30,10);
+            ctx.fillRect(310,90,10,10);
+            ctx.fillRect(340,120,10,20);
+            ctx.fillRect(320,150,10,10)
+        } }
         function e(){
+        switch (drawn) {//code in green
+            case 1:
             ctx.fillRect(90,90,10,50);
             ctx.fillRect(100,100,10,40);
-            ctx.fillRect(110,110,10,20) }
+            ctx.fillRect(110,110,10,20) 
+        break;
+            case 2:
+            ctx.fillRect(190,100,30,20)  
+        break;
+            case 3:
+            ctx.fillRect(330,160,30,30);
+            ctx.fillRect(340,150,10,50);
+            ctx.fillRect(320,170,10,10)
+        } }
         function f(){
+        switch (drawn) {//code in green
+            case 1:
             ctx.fillRect(120,170,30,80);
             ctx.fillRect(140,150,40,40);
             ctx.fillRect(150,140,20,10);
@@ -287,15 +611,65 @@
             ctx.fillRect(290,160,10,10);
             ctx.fillRect(290,290,10,30);
             ctx.fillRect(300,290,10,20);
-            ctx.fillRect(310,280,10,20) }
+            ctx.fillRect(310,280,10,20)  
+        break;
+            case 2:
+            ctx.fillRect(180,130,40,10);
+            ctx.fillRect(170,140,50,10) 
+        break;
+            case 3:
+            ctx.fillRect(280,180,40,50);
+            ctx.fillRect(270,210,10,10);
+            ctx.fillRect(300,190,30,60);
+            ctx.fillRect(330,200,10,40);
+            ctx.fillRect(340,210,10,20);
+            ctx.fillRect(290,230,10,10);
+            ctx.fillRect(310,250,10,10)
+        } }
         function g(){
-            ctx.fillRect(160,200,10,30) }
+        switch (drawn) {//code in green
+            case 1:
+            ctx.fillRect(160,200,10,30) 
+        break;
+            case 2:
+            ctx.fillRect(160,160,60,20) 
+        break;
+            case 3:
+            ctx.fillRect(270,230,10,40);
+            ctx.fillRect(280,240,10,10);
+            ctx.fillRect(280,250,20,30);
+            ctx.fillRect(300,260,10,10)
+        } }
         function h(){
+        switch (drawn) {//code in green
+            case 1:
             ctx.fillRect(200,260,30,30);
-            ctx.fillRect(210,290,10,10) }
+            ctx.fillRect(210,290,10,10) 
+        break;
+            case 2:
+            ctx.fillRect(150,190,70,10);
+            ctx.fillRect(140,200,80,10) 
+        break;
+            case 3:
+            ctx.fillRect(210,220,50,60)
+        } }
         function i(){
-            ctx.fillRect(260,200,10,30) }
+        switch (drawn) {//code in green
+            case 1:
+            ctx.fillRect(260,200,10,30) 
+        break;
+            case 2:
+            ctx.fillRect(130,220,90,20) 
+        break;
+            case 3:
+            ctx.fillRect(190,230,10,40);
+            ctx.fillRect(180,240,10,10);
+            ctx.fillRect(170,250,20,30);
+            ctx.fillRect(160,260,10,10)
+        } }
         function j(){
+        switch (drawn) {//code in green
+            case 1:
             ctx.fillRect(290,90,10,20);
             ctx.fillRect(300,80,10,30);
             ctx.fillRect(310,70,10,30);
@@ -303,30 +677,154 @@
             ctx.fillRect(330,50,10,30);
             ctx.fillRect(340,40,10,30);
             ctx.fillRect(340,140,10,20);
-            ctx.fillRect(350,30,10,120) }
+            ctx.fillRect(350,30,10,120) 
+        break;
+            case 2:
+            ctx.fillRect(120,250,100,10);
+            ctx.fillRect(110,260,110,10) 
+        break;
+            case 3:
+            ctx.fillRect(150,180,40,50);
+            ctx.fillRect(190,210,10,10);
+            ctx.fillRect(140,190,30,60);
+            ctx.fillRect(130,200,10,40);
+            ctx.fillRect(120,210,10,20);
+            ctx.fillRect(170,230,10,10);
+            ctx.fillRect(150,250,10,10)
+        } }
         function k(){
+        switch (drawn) {//code in green
+            case 1:
             ctx.fillRect(310,110,10,20);
             ctx.fillRect(320,100,10,40);
-            ctx.fillRect(330,90,10,50) }
+            ctx.fillRect(330,90,10,50) 
+        break;
+            case 2:
+            ctx.fillRect(100,280,120,20) 
+        break;
+            case 3:
+            ctx.fillRect(110,160,30,30);
+            ctx.fillRect(120,150,10,50);
+            ctx.fillRect(140,170,10,10)
+        } }
         function l(){
+        switch (drawn) {//code in green
+            case 1:
             ctx.fillRect(310,440,40,70);
             ctx.fillRect(320,450,40,80);
             ctx.fillRect(300,450,10,50);
-            ctx.fillRect(320,430,20,10) }
+            ctx.fillRect(320,430,20,10) 
+        break;
+            case 2:
+            ctx.fillRect(90,310,130,10);
+            ctx.fillRect(80,320,140,10) 
+        break;
+            case 3:
+            ctx.fillRect(190,130,10,10);
+            ctx.fillRect(150,120,40,50);
+            ctx.fillRect(130,110,50,40);
+            ctx.fillRect(140,100,30,10);
+            ctx.fillRect(150,90,10,10);
+            ctx.fillRect(120,120,10,20);
+            ctx.fillRect(140,150,10,10)
+        } }
         function m(){
+        switch (drawn) {//code in green
+            case 1:
             ctx.fillRect(330,370,50,10);
             ctx.fillRect(340,360,30,30);
             ctx.fillRect(350,340,40,30);
             ctx.fillRect(350,390,10,10);
             ctx.fillRect(360,330,30,10);
             ctx.fillRect(370,320,10,10);
-            ctx.fillRect(390,340,10,10) }
+            ctx.fillRect(390,340,10,10) 
+        break;
+            case 2:
+            ctx.fillRect(60,410,360,20);
+            ctx.fillRect(70,430,60,10);
+            ctx.fillRect(160,430,60,10);
+            ctx.fillRect(250,430,60,10);
+            ctx.fillRect(340,430,70,10);
+            ctx.fillRect(70,440,50,10);
+            ctx.fillRect(170,440,40,10);
+            ctx.fillRect(260,440,40,10);
+            ctx.fillRect(350,440,60,10);
+            ctx.fillRect(80,450,30,20);
+            ctx.fillRect(180,450,20,30);
+            ctx.fillRect(270,450,20,30);
+            ctx.fillRect(360,450,40,20);
+            ctx.fillRect(90,470,20,20);
+            ctx.fillRect(360,470,30,30);
+            ctx.fillRect(110,480,10,10);
+            ctx.fillRect(170,480,40,10);
+            ctx.fillRect(260,480,40,10);
+            ctx.fillRect(350,480,10,10);
+            ctx.fillRect(100,490,30,20);
+            ctx.fillRect(160,490,60,20);
+            ctx.fillRect(250,490,60,20);
+            ctx.fillRect(340,490,40,20);
+            ctx.fillRect(110,500,260,30) 
+        break;
+            case 3:
+            ctx.fillRect(190,80,10,40);
+            ctx.fillRect(170,70,20,30);
+            ctx.fillRect(180,100,10,10);
+            ctx.fillRect(160,80,10,10)
+        } }
         function n(){
+        switch (drawn) {//code in green
+            case 1:
             ctx.fillRect(380,300,10,10);
             ctx.fillRect(390,300,10,20);
-            ctx.fillRect(400,290,10,40) }                   //fills in sections
+            ctx.fillRect(400,290,10,40)                    //fills in sections
+        break;
+            case 2:
+            ctx.fillRect(130,440,30,50);
+            ctx.fillRect(120,450,50,30) 
+        break;
+            case 3:
+            ctx.fillRect(230,290,10,230)
+        } }
+        function o(){
+        switch (drawn) {//code in green
+            case 1:
+        break;
+            case 2:
+            ctx.fillRect(220,440,30,50);
+            ctx.fillRect(210,450,50,30) 
+        break;
+            case 3:
+            ctx.fillRect(250,430,10,10);
+            ctx.fillRect(260,420,10,10);
+            ctx.fillRect(270,410,10,10);
+            ctx.fillRect(280,400,10,10)
+        } }
+        function p(){
+        switch (drawn) {//code in green
+            case 1:
+        break;
+            case 2:
+            ctx.fillRect(310,440,30,50);
+            ctx.fillRect(300,450,50,30)             //fills in sections
+        break;
+            case 3:
+            ctx.fillRect(280,370,20,20);
+            ctx.fillRect(290,350,30,20);
+            ctx.fillRect(300,340,50,10);
+            ctx.fillRect(320,350,10,10);
+            ctx.fillRect(300,370,10,10);
+            ctx.fillRect(290,390,10,10);
+            ctx.fillRect(300,390,20,20);
+            ctx.fillRect(320,370,20,30);
+            ctx.fillRect(310,380,10,10);
+            ctx.fillRect(330,360,10,10);
+            ctx.fillRect(340,340,10,50);          //fills in sections
+        } }
         function MyHandler(MyEvent){
-            if(MyEvent.clientX<40){
+        switch (drawn) {//code in blue
+            case 1:
+        //code for Fox
+                    if(MyEvent.clientX<50){
                 if(MyEvent.clientY<40){
                     ctx.fillStyle="Black"}
                 else if(MyEvent.clientY<80){
@@ -717,9 +1215,560 @@
                 if(MyEvent.clientY<290){}
                 else if(MyEvent.clientY<335){n()}
                 else {} }
-            else {} }                                  //says where is clicked
+            else {} ;                                  //says where is clicked
+        break;
+            case 2:
+        //code for Boat
+            if(MyEvent.clientX<50){
+                if(MyEvent.clientY<40){
+                    ctx.fillStyle="Black"}
+                else if(MyEvent.clientY<80){
+                    ctx.fillStyle="DimGrey"}
+                else if(MyEvent.clientY<120){
+                    ctx.fillStyle="FireBrick"}
+                else if(MyEvent.clientY<160){
+                    ctx.fillStyle="Red"}
+                else if(MyEvent.clientY<200){
+                    ctx.fillStyle="Orange"}
+                else if(MyEvent.clientY<240){
+                    ctx.fillStyle="Yellow"}
+                else if(MyEvent.clientY<280){
+                    ctx.fillStyle="ForestGreen"}
+                else if(MyEvent.clientY<320){
+                    ctx.fillStyle="LawnGreen"}
+                else if(MyEvent.clientY<360){
+                    ctx.fillStyle="MidnightBlue"}
+                else if(MyEvent.clientY<400){
+                    ctx.fillStyle="SteelBlue"}
+                else if(MyEvent.clientY<440){
+                    ctx.fillStyle="PaleTurquoise"}
+                else if(MyEvent.clientY<480){
+                    ctx.fillStyle="LemonChiffon"}
+                else if(MyEvent.clientY<520){
+                    ctx.fillStyle="WhiteSmoke"}
+                else{ctx.fillStyle="White"}}            //sets colours
+            else if(MyEvent.clientX<70){}
+            else if(MyEvent.clientX<80){
+                if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<435){m()}
+                else {} }
+            else if(MyEvent.clientX<90){
+                if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<455){m()}
+                else {} }
+            else if(MyEvent.clientX<100){
+                if(MyEvent.clientY<315){}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<475){m()}
+                else {} }
+            else if(MyEvent.clientX<110){
+                if(MyEvent.clientY<310){}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<4100){m()}
+                else {} }
+            else if(MyEvent.clientX<120){
+                if(MyEvent.clientY<280){}
+                else if(MyEvent.clientY<310){k()}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<515){m()}
+                else {} }
+            else if(MyEvent.clientX<130){
+                if(MyEvent.clientY<225){}
+                else if(MyEvent.clientY<280){j()}
+                else if(MyEvent.clientY<310){k()}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<455){m()}
+                else if(MyEvent.clientY<475){}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<140){
+                if(MyEvent.clientY<245){}
+                else if(MyEvent.clientY<280){j()}
+                else if(MyEvent.clientY<310){k()}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<445){m()}
+                else if(MyEvent.clientY<485){n()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<150){
+                if(MyEvent.clientY<220){}
+                else if(MyEvent.clientY<245){i()}
+                else if(MyEvent.clientY<280){j()}
+                else if(MyEvent.clientY<310){k()}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<435){m()}
+                else if(MyEvent.clientY<4100){n()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<160){
+                if(MyEvent.clientY<1100){}
+                else if(MyEvent.clientY<220){h()}
+                else if(MyEvent.clientY<245){i()}
+                else if(MyEvent.clientY<280){j()}
+                else if(MyEvent.clientY<310){k()}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<435){m()}
+                else if(MyEvent.clientY<4100){n()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<170){
+                if(MyEvent.clientY<190){}
+                else if(MyEvent.clientY<220){h()}
+                else if(MyEvent.clientY<245){i()}
+                else if(MyEvent.clientY<280){j()}
+                else if(MyEvent.clientY<310){k()}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<435){m()}
+                else if(MyEvent.clientY<4100){n()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<180){
+                if(MyEvent.clientY<160){}
+                else if(MyEvent.clientY<190){g()}
+                else if(MyEvent.clientY<220){h()}
+                else if(MyEvent.clientY<245){i()}
+                else if(MyEvent.clientY<280){j()}
+                else if(MyEvent.clientY<310){k()}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<445){m()}
+                else if(MyEvent.clientY<485){n()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<190){
+                if(MyEvent.clientY<135){}
+                else if(MyEvent.clientY<160){f()}
+                else if(MyEvent.clientY<190){g()}
+                else if(MyEvent.clientY<220){h()}
+                else if(MyEvent.clientY<245){i()}
+                else if(MyEvent.clientY<280){j()}
+                else if(MyEvent.clientY<310){k()}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<455){m()}
+                else if(MyEvent.clientY<475){}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<200){
+                if(MyEvent.clientY<130){}
+                else if(MyEvent.clientY<160){f()}
+                else if(MyEvent.clientY<190){g()}
+                else if(MyEvent.clientY<220){h()}
+                else if(MyEvent.clientY<245){i()}
+                else if(MyEvent.clientY<280){j()}
+                else if(MyEvent.clientY<310){k()}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<210){
+                if(MyEvent.clientY<100){}
+                else if(MyEvent.clientY<130){e()}
+                else if(MyEvent.clientY<160){f()}
+                else if(MyEvent.clientY<190){g()}
+                else if(MyEvent.clientY<220){h()}
+                else if(MyEvent.clientY<245){i()}
+                else if(MyEvent.clientY<280){j()}
+                else if(MyEvent.clientY<310){k()}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<220){
+                if(MyEvent.clientY<75){}
+                else if(MyEvent.clientY<100){d()}
+                else if(MyEvent.clientY<130){e()}
+                else if(MyEvent.clientY<160){f()}
+                else if(MyEvent.clientY<190){g()}
+                else if(MyEvent.clientY<220){h()}
+                else if(MyEvent.clientY<245){i()}
+                else if(MyEvent.clientY<280){j()}
+                else if(MyEvent.clientY<310){k()}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<455){m()}
+                else if(MyEvent.clientY<475){}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<230){
+                if(MyEvent.clientY<55){}
+                else if(MyEvent.clientY<100){d()}
+                else if(MyEvent.clientY<130){e()}
+                else if(MyEvent.clientY<160){f()}
+                else if(MyEvent.clientY<190){g()}
+                else if(MyEvent.clientY<220){h()}
+                else if(MyEvent.clientY<245){i()}
+                else if(MyEvent.clientY<280){j()}
+                else if(MyEvent.clientY<310){k()}
+                else if(MyEvent.clientY<340){l()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<445){m()}
+                else if(MyEvent.clientY<485){o()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<240){
+                if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<435){m()}
+                else if(MyEvent.clientY<4100){o()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<250){
+                if(MyEvent.clientY<15){}
+                else if(MyEvent.clientY<405){c()}
+                else if(MyEvent.clientY<435){m()}
+                else if(MyEvent.clientY<4100){o()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<260){
+                if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<435){m()}
+                else if(MyEvent.clientY<4100){o()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<270){
+                if(MyEvent.clientY<15){}
+                else if(MyEvent.clientY<55){a()}
+                else if(MyEvent.clientY<65){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<445){m()}
+                else if(MyEvent.clientY<485){o()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<280){
+                if(MyEvent.clientY<25){}
+                else if(MyEvent.clientY<50){a()}
+                else if(MyEvent.clientY<85){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<455){m()}
+                else if(MyEvent.clientY<475){}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<290){
+                if(MyEvent.clientY<105){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<300){
+                if(MyEvent.clientY<130){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<310){
+                if(MyEvent.clientY<145){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<455){m()}
+                else if(MyEvent.clientY<475){}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<320){
+                if(MyEvent.clientY<165){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<445){m()}
+                else if(MyEvent.clientY<485){p()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<330){
+                if(MyEvent.clientY<190){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<435){m()}
+                else if(MyEvent.clientY<4100){p()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<340){
+                if(MyEvent.clientY<205){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<435){m()}
+                else if(MyEvent.clientY<4100){p()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<350){
+                if(MyEvent.clientY<225){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<435){m()}
+                else if(MyEvent.clientY<4100){p()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<360){
+                if(MyEvent.clientY<245){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<445){m()}
+                else if(MyEvent.clientY<485){p()}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<370){
+                if(MyEvent.clientY<265){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<455){m()}
+                else if(MyEvent.clientY<475){}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<380){
+                if(MyEvent.clientY<285){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<535){m()}
+                else {} }
+            else if(MyEvent.clientX<390){
+                if(MyEvent.clientY<305){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<515){m()}
+                else {} }
+            else if(MyEvent.clientX<400){
+                if(MyEvent.clientY<325){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<4100){m()}
+                else {} }
+            else if(MyEvent.clientX<410){
+                if(MyEvent.clientY<345){}
+                else if(MyEvent.clientY<365){b()}
+                else if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<475){m()}
+                else {} }
+            else if(MyEvent.clientX<420){
+                if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<455){m()}
+                else {} }
+            else if(MyEvent.clientX<430){
+                if(MyEvent.clientY<405){}
+                else if(MyEvent.clientY<435){m()}
+                else {} }
+            else {} ;                                  //says where is clicked
+        break;
+            case 3:
+        //code for Flower
+            if(MyEvent.clientX<50){
+                if(MyEvent.clientY<40){
+                    ctx.fillStyle="Red"}
+                else if(MyEvent.clientY<80){
+                    ctx.fillStyle="Orange"}
+                else if(MyEvent.clientY<120){
+                    ctx.fillStyle="Yellow"}
+                else if(MyEvent.clientY<160){
+                    ctx.fillStyle="Crimson"}
+                else if(MyEvent.clientY<200){
+                    ctx.fillStyle="PaleVioletRed"}
+                else if(MyEvent.clientY<240){
+                    ctx.fillStyle="Orchid"}
+                else if(MyEvent.clientY<280){
+                    ctx.fillStyle="RebeccaPurple"}
+                else if(MyEvent.clientY<320){
+                    ctx.fillStyle="MidnightBlue"}
+                else if(MyEvent.clientY<360){
+                    ctx.fillStyle="ForestGreen"}
+                else if(MyEvent.clientY<400){
+                    ctx.fillStyle="SeaGreen"}
+                else if(MyEvent.clientY<440){
+                    ctx.fillStyle="Thistle"}
+                else if(MyEvent.clientY<480){
+                    ctx.fillStyle="LemonChiffon"}
+                else if(MyEvent.clientY<520){
+                    ctx.fillStyle="WhiteSmoke"}
+                else{ctx.fillStyle="White"}}            //sets colours
+            else if(MyEvent.clientX<115){}
+            else if(MyEvent.clientX<130){
+                if(MyEvent.clientY<160){}
+                else if(MyEvent.clientY<200){k()}
+                else {} }
+            else if(MyEvent.clientX<140){
+                if(MyEvent.clientY<120){}
+                else if(MyEvent.clientY<150){l()}
+                else if(MyEvent.clientY<210){k()}
+                else if(MyEvent.clientY<240){j()}
+                else {} }
+            else if(MyEvent.clientX<150){
+                if(MyEvent.clientY<110){}
+                else if(MyEvent.clientY<160){l()}
+                else if(MyEvent.clientY<200){k()}
+                else if(MyEvent.clientY<250){j()}
+                else {} }
+            else if(MyEvent.clientX<160){
+                if(MyEvent.clientY<100){}
+                else if(MyEvent.clientY<170){l()}
+                else if(MyEvent.clientY<190){k()}
+                else if(MyEvent.clientY<260){j()}
+                else {} }
+            else if(MyEvent.clientX<170){
+                if(MyEvent.clientY<90){}
+                else if(MyEvent.clientY<180){l()}
+                else if(MyEvent.clientY<270){j()}
+                else {} }
+            else if(MyEvent.clientX<180){
+                if(MyEvent.clientY<80){}
+                else if(MyEvent.clientY<100){m()}
+                else if(MyEvent.clientY<180){l()}
+                else if(MyEvent.clientY<260){j()}
+                else if(MyEvent.clientY<280){i()}
+                else {} }
+            else if(MyEvent.clientX<190){
+                if(MyEvent.clientY<70){}
+                else if(MyEvent.clientY<110){m()}
+                else if(MyEvent.clientY<180){l()}
+                else if(MyEvent.clientY<250){j()}
+                else if(MyEvent.clientY<290){i()}
+                else {} }
+            else if(MyEvent.clientX<200){
+                if(MyEvent.clientY<70){}
+                else if(MyEvent.clientY<120){m()}
+                else if(MyEvent.clientY<180){l()}
+                else if(MyEvent.clientY<240){j()}
+                else if(MyEvent.clientY<290){i()}
+                else {} }
+            else if(MyEvent.clientX<210){
+                if(MyEvent.clientY<80){}
+                else if(MyEvent.clientY<130){m()}
+                else if(MyEvent.clientY<150){l()}
+                else if(MyEvent.clientY<210){}
+                else if(MyEvent.clientY<230){j()}
+                else if(MyEvent.clientY<280){i()}
+                else {} }
+            else if(MyEvent.clientX<220){
+                if(MyEvent.clientY<140){}
+                else if(MyEvent.clientY<220){a()}
+                else {} }
+            else if(MyEvent.clientX<230){
+                if(MyEvent.clientY<70){}
+                else if(MyEvent.clientY<140){b()}
+                else if(MyEvent.clientY<220){a()}
+                else if(MyEvent.clientY<290){h()}
+                else {} }
+            else if(MyEvent.clientX<240){
+                if(MyEvent.clientY<70){}
+                else if(MyEvent.clientY<140){b()}
+                else if(MyEvent.clientY<220){a()}
+                else if(MyEvent.clientY<290){h()}
+                else {} }
+            else if(MyEvent.clientX<250){
+                if(MyEvent.clientY<70){}
+                else if(MyEvent.clientY<140){b()}
+                else if(MyEvent.clientY<220){a()}
+                else if(MyEvent.clientY<290){h()}
+                else if(MyEvent.clientY<530){n()}
+                else {} }
+            else if(MyEvent.clientX<260){
+                if(MyEvent.clientY<70){}
+                else if(MyEvent.clientY<140){b()}
+                else if(MyEvent.clientY<220){a()}
+                else if(MyEvent.clientY<290){h()}
+                else {} }
+            else if(MyEvent.clientX<270){
+                if(MyEvent.clientY<70){}
+                else if(MyEvent.clientY<140){b()}
+                else if(MyEvent.clientY<220){a()}
+                else if(MyEvent.clientY<290){h()}
+                else if(MyEvent.clientY<430){}
+                else if(MyEvent.clientY<450){o()}
+                else {} }
+            else if(MyEvent.clientX<280){
+                if(MyEvent.clientY<140){}
+                else if(MyEvent.clientY<220){a()}
+                else if(MyEvent.clientY<420){}
+                else if(MyEvent.clientY<440){o()}
+                else {} }
+            else if(MyEvent.clientX<290){
+                if(MyEvent.clientY<80){}
+                else if(MyEvent.clientY<130){c()}
+                else if(MyEvent.clientY<150){d()}
+                else if(MyEvent.clientY<210){}
+                else if(MyEvent.clientY<230){f()}
+                else if(MyEvent.clientY<280){g()}
+                else if(MyEvent.clientY<410){}
+                else if(MyEvent.clientY<430){o()}
+                else {} }
+            else if(MyEvent.clientX<300){
+                if(MyEvent.clientY<70){}
+                else if(MyEvent.clientY<120){c()}
+                else if(MyEvent.clientY<180){d()}
+                else if(MyEvent.clientY<240){f()}
+                else if(MyEvent.clientY<290){g()}
+                else if(MyEvent.clientY<370){}
+                else if(MyEvent.clientY<400){p()}
+                else if(MyEvent.clientY<420){o()}
+                else {} }
+            else if(MyEvent.clientX<310){
+                if(MyEvent.clientY<70){}
+                else if(MyEvent.clientY<110){c()}
+                else if(MyEvent.clientY<180){d()}
+                else if(MyEvent.clientY<250){f()}
+                else if(MyEvent.clientY<290){g()}
+                else if(MyEvent.clientY<350){}
+                else if(MyEvent.clientY<410){p()}
+                else {} }
+            else if(MyEvent.clientX<320){
+                if(MyEvent.clientY<80){}
+                else if(MyEvent.clientY<100){c()}
+                else if(MyEvent.clientY<180){d()}
+                else if(MyEvent.clientY<260){f()}
+                else if(MyEvent.clientY<280){g()}
+                else if(MyEvent.clientY<340){}
+                else if(MyEvent.clientY<420){p()}
+                else {} }
+            else if(MyEvent.clientX<330){
+                if(MyEvent.clientY<90){}
+                else if(MyEvent.clientY<180){d()}
+                else if(MyEvent.clientY<270){f()}
+                else if(MyEvent.clientY<340){}
+                else if(MyEvent.clientY<420){p()}
+                else {} }
+            else if(MyEvent.clientX<340){
+                if(MyEvent.clientY<100){}
+                else if(MyEvent.clientY<170){d()}
+                else if(MyEvent.clientY<190){e()}
+                else if(MyEvent.clientY<260){f()}
+                else if(MyEvent.clientY<340){}
+                else if(MyEvent.clientY<410){p()}
+                else {} }
+            else if(MyEvent.clientX<350){
+                if(MyEvent.clientY<110){}
+                else if(MyEvent.clientY<160){d()}
+                else if(MyEvent.clientY<200){e()}
+                else if(MyEvent.clientY<250){f()}
+                else if(MyEvent.clientY<340){}
+                else if(MyEvent.clientY<410){p()}
+                else {} }
+            else if(MyEvent.clientX<360){
+                if(MyEvent.clientY<120){}
+                else if(MyEvent.clientY<150){d()}
+                else if(MyEvent.clientY<210){e()}
+                else if(MyEvent.clientY<240){f()}
+                else if(MyEvent.clientY<340){}
+                else if(MyEvent.clientY<400){p()}
+                else {} }
+            else if(MyEvent.clientX<370){
+                if(MyEvent.clientY<160){}
+                else if(MyEvent.clientY<200){e()}
+                else {} }
+            else {} ;                                  //says where is clicked
+        } }
+        function Fox(){
+            drawn = 1; Start() }
+        function Boat(){
+            drawn = 2; Start() }
+        function Flower(){
+            drawn = 3; Start() }
+        Fox();
         addEventListener("mousedown",MyHandler);	//Listens	for	Mouse
         addEventListener("touchstart",MyHandler);	//Listens	for	Mouse
         </script>
     </body>
-</html> 
+</html>
