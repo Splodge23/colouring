@@ -1,2 +1,2 @@
 # colouring
-Colour in your favourite pictures, now includes a boat and flower.
+colour in your favourite pictures, now includes a boat and flower.
