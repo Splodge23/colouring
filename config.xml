@@ -2,15 +2,15 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "colouring.splodge23.edu.mit.scratch"
-        versionCode = "10" 
-        version     = "1.0.0" >
+        versionCode = "20" 
+        version     = "2.0.0" >
      <preference name="phonegap-version" value="cli-9.0.0" />
     <name>Colouring</name>
     <description>
-Colour in your favourite pictures
+Colour in your favourite pictures, now includes a boat and flower.
     </description>
     <author href="http://scratch.mit.edu/users/splodge23" email="samuel.ryan.cz@gmail.com">
         splodge23
     </author>
-        <icon src="icon.png"/>
+        <icon src="newicon.png"/>
 </widget>
